@@ -1,14 +1,21 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 /**
  * main - print the lowercase alphabets in reverse
+ *
  * Return: 0 (Success)
  */
+
 int main(void)
 {
-char mg:
+	char mg;
 
-for (mg = 'z'z; mg >= 'a'; mg--)
-putchar(mg);
-putchar('\n');
-return (0);
+	for (mg = 'z'; mg >= 'a'; mg--)
+		putchar(mg);
+
+	putchar('\n');
+
+	return (0);
 }
