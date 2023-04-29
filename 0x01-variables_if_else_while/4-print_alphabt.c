@@ -1,20 +1,20 @@
 #include <stdio.h>
-
 /**
- *main - Print alphabets without q and e
- *Return: Always 0 (Success)
+ *main- Entry point.
+ *Return:0
  */
 int main(void)
 {
-	char g;
+	char l;
 
-	for (g = 'a'; g <= 'z'; g++)
+	for (l = 'a'; l <= 'z'; l++)
 	{
-		if (g == 'e' || g == 'q')
+		if (l == 'e' || l == 'q')
 			continue;
-		putchar(g);
+		putchar(l);
 	}
-	putchar('\n\);
+	putchar('\n');
 	return (0);
 }
+
 
