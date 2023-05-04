@@ -8,30 +8,30 @@
  */
 int main(void)
 {
-	long int q;
-	long int maximum;
-	long int r;
+	long int a;
+	long int max;
+	long int b;
 
-	q = 612852475143;
-	maximum = -1;
+	a = 612852475143;
+	max = -1;
 
-	while (q % 2 == 0)
+	while (a % 2 == 0)
 	{
-		maximum = 2;
-		q/= 2;
+		max = 2;
+		a/= 2;
 	}
 
-	for (r = 3; r <= sqrt(q); r = r + 2)
+	for (b = 3; b <= sqrt(a); b = b + 2)
 	{
-		while (q % r == 0)
+		while (a % b == 0)
 		{
-			maximum = r;
-			q = q / r;
+			max = b;
+			a = a /b;
 		}
 	}
 
-	if (q > 2)
-		maximum = q;
+	if (a > 2)
+		max = a;
 
 	printf("%ld\n", max);
 
