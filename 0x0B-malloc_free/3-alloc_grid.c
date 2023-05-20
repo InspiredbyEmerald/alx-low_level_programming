@@ -1,13 +1,12 @@
-#include "main.h"
-#include <stdlib.h>
-
- /**
+/**
  * alloc_grid - Entry point
  * @width : width of grid
  * @height : height of grid
  * Return: pointer to 2 dimensional array
 */
 
+#include "main.h"
+#include <stdlib.h>
 
 int **alloc_grid(int width, int height)
 {
