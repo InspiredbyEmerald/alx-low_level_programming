@@ -1,16 +1,22 @@
 #include "function_pointers.h"
 #include <stdio.h>
 /**
- * print_name - print name using pointer to function
- * @name: string to add
- * @f: pointer to function
- * Return: nothing
- **/
-void print_name(char *name, void (*f)(char *))
+ * array_iterator - executes function as parameter on each element of an array.
+ * @array: array
+ * @size: how many elem to print
+ * @action: pointer to print in regular or hex
+ * Return: void
+ */
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	if (name == NULL || f == NULL)
+	unsigned int i;
+
+	if (array == NULL || action == NULL)
 		return;
 
-	f(name);
+	for (i = 0; i < size; i++)
+	{
+		action(array[i]);
+	}
 }
 
